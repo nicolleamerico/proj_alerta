@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-label>Select: Alert Interface</ion-label>
+    <ion-select class="custom-options" (ionChange)="verificaSelecionado($event)"> <!-- (ionChange) -> seleciona um item e ele executa o icone selecionado //n precisa de um botão nem nada, ele dispara após a seleção e faz o que o ts manda-->
+      <ion-select-option value="jeep">Jeep</ion-select-option>
+      <ion-select-option value="fiat">Fiat</ion-select-option>
+      <ion-select-option value="vw">VW</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Select: Alert Interface (Multiple Selection)</ion-label>
+    <ion-select class="custom-options" multiple="true" (ionChange)="verificaSelecionado($event)">
+      <ion-select-option value="c">C#</ion-select-option>
+      <ion-select-option value="java">Java</ion-select-option>
+      <ion-select-option value="python">Python</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Select: Popover Interface</ion-label>
+    <ion-select interface="popover" class="custom-options" (ionChange)="verificaSelecionado($event)">
+      <ion-select-option value="ferrari">Ferrari</ion-select-option>
+      <ion-select-option value="mclaren">McLaren</ion-select-option>
+      <ion-select-option value="mercedes">Mercedes</ion-select-option>
+      <ion-select-option value="redbull">RedBull</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Select: Action Sheet Interface</ion-label>
+    <ion-select interface="action-sheet" class="custom-options" (ionChange)="verificaSelecionado($event)">
+      <ion-select-option value="iron">Iron Maiden</ion-select-option>
+      <ion-select-option value="metallica">Metallica</ion-select-option>
+      <ion-select-option value="acdc">ACDC</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+</ion-content>

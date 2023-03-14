@@ -1,0 +1,7 @@
+{
+  "name": "Alerta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
